@@ -1,0 +1,37 @@
+============================================================
+SVM + ResNet50 Test Results
+============================================================
+
+Overall Accuracy: 0.8494 (84.94%)
+
+--- Classification Report ---
+                    precision    recall  f1-score   support
+
+        Abyssinian       0.88      0.95      0.91        56
+American Shorthair       0.60      0.45      0.51        56
+            Birman       0.86      0.79      0.82        56
+ British Shorthair       0.85      0.95      0.90        56
+      Egyptian Mau       0.91      0.94      0.93        54
+           Persian       1.00      0.96      0.98        56
+           Ragdoll       0.86      0.87      0.86        55
+           Siamese       0.91      0.96      0.94        55
+            Sphynx       0.91      1.00      0.95        52
+  Toyger tiger cat       0.64      0.64      0.64        55
+
+          accuracy                           0.85       551
+         macro avg       0.84      0.85      0.84       551
+      weighted avg       0.84      0.85      0.84       551
+
+
+--- Confusion Matrix ---
+Labels: [np.str_('Abyssinian'), np.str_('American Shorthair'), np.str_('Birman'), np.str_('British Shorthair'), np.str_('Egyptian Mau'), np.str_('Persian'), np.str_('Ragdoll'), np.str_('Siamese'), np.str_('Sphynx'), np.str_('Toyger tiger cat')]
+[[53  2  0  0  0  0  0  0  1  0]
+ [ 1 25  0  6  3  0  0  0  2 19]
+ [ 1  0 44  0  0  0  6  4  1  0]
+ [ 0  2  0 53  0  0  0  0  1  0]
+ [ 2  0  0  0 51  0  0  0  0  1]
+ [ 0  0  0  1  0 54  1  0  0  0]
+ [ 0  0  6  0  0  0 48  1  0  0]
+ [ 0  0  1  0  0  0  1 53  0  0]
+ [ 0  0  0  0  0  0  0  0 52  0]
+ [ 3 13  0  2  2  0  0  0  0 35]]
